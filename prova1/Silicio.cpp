@@ -33,7 +33,7 @@ int Silicio()
     // Pad 1: Linear scale graph
     c1->cd(1);
     c1->cd(1)->SetGrid();
-    graph->GetXaxis()->SetLimits(450, 750);
+    graph->GetXaxis()->SetLimits(400, 800);
     graph->GetYaxis()->SetRangeUser(0, 4);
     graph->Draw("AP");
 
@@ -51,7 +51,7 @@ int Silicio()
     graphLog->SetTitle("Silicio_log;V (mV);I (mA)");
     graphLog->SetMarkerStyle(21);
     graphLog->SetMarkerSize(1.0);
-    graphLog->GetXaxis()->SetLimits(450, 750);
+    graphLog->GetXaxis()->SetLimits(400, 800);
     graphLog->GetYaxis()->SetRangeUser(0.01, 10); // Adjust to avoid negative values in log scale
     graphLog->Draw("AP");
     fitFunc->Draw("same");
